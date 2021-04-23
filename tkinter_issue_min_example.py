@@ -45,7 +45,7 @@ class VideoWidget(tk.Label):
         self.frame = self.vs.read()
         self.stopped = False
         self.frameRate = fps
-        self.frameInterval = int(1000/abs(self.frameRate))
+        self.frameInterval = 1/self.frameRate
 
     def start(self):
         self.vs.start()
